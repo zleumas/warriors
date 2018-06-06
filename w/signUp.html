@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign Up Page</title>
+	<title>Warriors - Sign Up</title>
 	<link rel="icon" href="images/favicon.ico">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,22 +13,39 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 </head>
 <body>
+	<div class="container-fluid" >
+		<nav class="navbar navbar-inverse" style="margin-bottom: 0">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Warriors</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Fan Page</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+	           <li><a href="signIn.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+   			</ul>
+        </div>
+      </nav>
+	</div>
+	 
+          
 	<div class="container">
 		<div class="row">
-			<h3> Please fill the form below to sign up</h3>
+		<h3> Please fill the form below to sign up</h3>
 		<div class="col-md-3"></div>
-			<div class="col-md-6">
+			<div class="container">
+				<div class="col-md-6">
 				<form action="/action_page.php">
 					<div class="form-group">
-					    <label for="name">Name:</label>
-					    <input type="email" class="form-control" id="name">
+					  <div class="form-group">
+					    <label for="username">Username:</label>
+					    <input type="username" class="form-control" id="username">
 					  </div>
 					  <div class="form-group">
-					    <label for="email">Username:</label>
-					    <input type="email" class="form-control" id="username">
-					  </div>
-					  <div class="form-group">
-					    <label for="email">Email address:</label>
+					    <label for="email">E-mail:</label>
 					    <input type="email" class="form-control" id="email">
 					  </div>
 					  <div class="form-group">
@@ -36,7 +53,7 @@
 					    <input type="password" class="form-control" id="pwd">
 					  </div>
 					  <div class="form-group">
-					    <label for="pwd">Retype Password:</label>
+					    <label for="pwd">Confirm Password:</label>
 					    <input type="password" class="form-control" id="pwd">
 					  </div>
 					 <div>
@@ -44,6 +61,8 @@
 					 </div>
 					  <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
+			</div>
+				
 			</div>
 			<div class="col-md-3"></div>
 
